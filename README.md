@@ -1,5 +1,3 @@
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/burhan-khan/portfolio/blob/master/LICENSE)
-
 # Burhan Ahmad Khan - Personal Portfolio
 
 A professional portfolio showcasing my skills, projects, and experience as a Full Stack Software Developer. Built using **React.js**, **Next.js**, and **styled-components** for a clean, responsive, and fast design.
