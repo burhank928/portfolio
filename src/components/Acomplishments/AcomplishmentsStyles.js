@@ -1,88 +1,45 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const Boxes = styled.div`
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
-  margin: 24px 0 40px;
+  margin-top: 24px;
 
-  @media ${props => props.theme.breakpoints.md}{
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
-    margin: 20px 0 32px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
-
-  @media ${props => props.theme.breakpoints.sm}{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    max-width: 500px;
-    margin: 24px auto;
-  }
-`
+`;
 
 export const Box = styled.div`
-  background: #212D45;
-  border-radius: 12px;
-  height: 144px;
-  padding: 24px;
-  @media ${props => props.theme.breakpoints.lg} {
-    height: 210px;
+  background: #1e293b; /* Darker background for better contrast */
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left for better readability */
+  overflow: hidden;
+  word-wrap: break-word; /* Ensures long words break to the next line */
+  hyphens: auto; /* Adds hyphenation for better word breaking */
+  color: #e2e8f0; /* Light text color for better contrast */
+`;
 
-  }
-
-  @media ${props => props.theme.breakpoints.md} {
-    height: 135px;
-    padding: 16px;
-  }
-
-  @media ${props => props.theme.breakpoints.sm} {
-    height: 110px;
-    padding: 12px;
-    
-    &:nth-child(2n){
-      grid-row:2;
-    }
-  }
-`
-export const BoxTitle = styled.h5`
-  font-style: normal;
+export const BoxTitle = styled.h3`
+  font-size: 20px;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 0.01em;
-  color: #FFFFFF;
   margin-bottom: 8px;
-
-  @media ${props => props.theme.breakpoints.md} {
-    font-size: 28px;
-    line-height: 32px;
-  }
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: 24px;
-    line-height: 26px;
-}
-`
+  color: #f8fafc; /* Slightly brighter color for titles */
+`;
 
 export const BoxText = styled.p`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.75);
-
-  @media ${props => props.theme.breakpoints.md}{
-    font-size: 16px;
-    line-height: 20px;
-  };
-
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: 14px;
-    line-height: 14px;
-  }
-`
+  font-size: 16px;
+  color: #cbd5e1; /* Softer color for body text */
+  line-height: 1.5;
+  word-wrap: break-word; /* Ensures text wraps within the box */
+  overflow-wrap: break-word; /* Handles long unbreakable strings */
+  white-space: pre-wrap; /* Preserves whitespace and ensures wrapping */
+  margin: 4px 0; /* Adds spacing between text lines */
+`;
 
 export const Join = styled.div`
   display: flex;
@@ -90,44 +47,39 @@ export const Join = styled.div`
   align-items: center;
   padding-bottom: 80px;
 
-  @media ${props => props.theme.breakpoints.md}{
-    display: flex;
-    justify-content: center;
+  @media ${(props) => props.theme.breakpoints.md} {
     padding-bottom: 64px;
   }
 
-  @media ${props => props.theme.breakpoints.sm}{
-    display: flex;
+  @media ${(props) => props.theme.breakpoints.sm} {
     flex-direction: column;
-    align-items: center;
     padding-bottom: 32px;
   }
-`
+`;
 
 export const JoinText = styled.h5`
-  display: flex;
   font-size: 24px;
   line-height: 40px;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.5);
 
-@media ${props => props.theme.breakpoints.md}{
-  line-height: 32px;
-  font-size: 20px;
-};
+  @media ${(props) => props.theme.breakpoints.md} {
+    line-height: 32px;
+    font-size: 20px;
+  }
 
-@media ${props => props.theme.breakpoints.sm}{
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0 0 16px;
-}
-`
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px;
+  }
+`;
 
 export const IconContainer = styled.div`
   display: flex;
 
-  @media ${props => props.theme.breakpoints.sm}{
+  @media ${(props) => props.theme.breakpoints.sm} {
     width: 160px;
     justify-content: space-between;
   }
-`
+`;

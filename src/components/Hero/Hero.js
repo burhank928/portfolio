@@ -16,8 +16,10 @@ const Hero = (props) => (
         </SectionText>
         <Button onClick={(e) => {
           e.preventDefault();
-          window.location.href = '/files/resume.pdf';
-        }}>My Resume</Button>
+          window.location.href = `${process.env.NEXT_PUBLIC_BASE_PATH}/files/resume.pdf`;
+        }}>
+          My Resume
+        </Button>
       </LeftSection>
     </Section>
   </>
