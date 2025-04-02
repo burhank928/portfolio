@@ -125,7 +125,7 @@ export const ExternalLinks = styled.a`
 `;
 
 export const Tag = styled.li`
-  background-color: #007bff; /* Primary color for the pill */
+  background-color: #2575fc; /* Primary color for the pill */
   color: #fff;
   padding: 5px 10px;
   margin: 5px;
