@@ -1,8 +1,18 @@
-import React from 'react';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { Link } from '../../styles/GlobalComponents';
-import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import React from "react";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { Link } from "../../styles/GlobalComponents";
+import { SocialIcons } from "../Header/HeaderStyles";
+import {
+  CompanyContainer,
+  FooterWrapper,
+  LinkColumn,
+  LinkItem,
+  LinkList,
+  LinkTitle,
+  Slogan,
+  SocialContainer,
+  SocialIconsContainer,
+} from "./FooterStyles";
 
 const Footer = () => {
   const today = new Date();
@@ -22,20 +32,21 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Phone</LinkTitle>
-          <LinkItem href="tel:+923404088865">
-            +92 340 4088865
-          </LinkItem>
+          <LinkItem href="tel:+923404088865">+92 340 4088865</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Copyright &copy; {year} <Link href="#">Burhan Ahmad Khan</Link>. All rights reserved.</Slogan>
+          <Slogan>
+            Copyright &copy; {year} <Link href="#">Burhan Ahmad Khan</Link>. All
+            rights reserved.
+          </Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/burhanahmadkhan">
+          <SocialIcons href="https://github.com/burhank928">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/burhanahmadkhan/">
+          <SocialIcons href="https://www.linkedin.com/in/burhan-k">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
         </SocialContainer>

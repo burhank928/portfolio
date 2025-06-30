@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { Container, Div2, Div3, NavLink, SocialContainer, SocialIcons } from './HeaderStyles';
 
