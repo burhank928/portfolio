@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { Container, Div2, Div3, NavLink, SocialContainer, SocialIcons } from './HeaderStyles';
 
@@ -7,19 +6,13 @@ const Header = () => (
   <Container>
     <Div2>
       <li>
-        <Link href="#projects" legacyBehavior>
-          <NavLink>Projects</NavLink>
-        </Link>
+        <NavLink href="#projects">Projects</NavLink>
       </li>
       <li>
-        <Link href="#skills" legacyBehavior>
-          <NavLink>Skills</NavLink>
-        </Link>
+        <NavLink href="#skills">Skills</NavLink>
       </li>
       <li>
-        <Link href="#about" legacyBehavior>
-          <NavLink>About</NavLink>
-        </Link>
+        <NavLink href="#about">About</NavLink>
       </li>
     </Div2>
     <Div3>
