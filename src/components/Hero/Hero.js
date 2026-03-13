@@ -11,7 +11,7 @@ const Hero = (props) => {
             Burhan Ahmad Khan
           </SectionTitle>
           <SectionText>
-            Software Developer with 3+ years of experience in fintech, healthcare, and SaaS. Proficient in JavaScript, React.js, Node.js, React Native, Flutter, and Ruby on Rails. Delivered measurable improvements, including a 30% reduction in unauthorized access with MFA integration, 40% UI performance boost via framework transition, and 15% growth in app adoption through Shopify certification. Skilled in building scalable, secure solutions and enhancing user experience.
+            Software Developer with 4+ years of experience in fintech, healthcare, and SaaS. Proficient in JavaScript, React.js, NextJs, Node.js, Express, NestJS, and Ruby on Rails. Delivered measurable improvements, including a 30% reduction in unauthorized access with MFA integration, 40% UI performance boost via framework transition, and 15% growth in app adoption through Shopify certification. Skilled in building scalable, secure solutions and enhancing user experience.
           </SectionText>
           <StyledButtonLink
             href={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/files/resume.pdf`}

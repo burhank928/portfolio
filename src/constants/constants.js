@@ -39,19 +39,29 @@ export const ProjectsData = [
 
 export const AccomplishmentsData = [
   {
-    title: 'Saas LTV Growth',
+    title: 'Devsinc - Europe & UK London – Remote',
+    role: 'Senior Software Engineer',
+    duration: 'Mar 2025 – Present',
+  },
+  {
+    title: 'Saas LTV Growth, Wilmington – Remote',
     role: 'Full Stack Software Engineer',
-    duration: 'Jan 2023 – Present',
+    duration: 'Mar 2024 – Feb 2025',
   },
   {
-    title: 'Devsinc',
+    title: 'Devsinc Lahore - Hybrid',
     role: 'Software Engineer',
-    duration: 'June 2022 – Jan 2023',
+    duration: 'July 2023 – Mar 2024',
   },
   {
-    title: 'Devsinc',
+    title: 'Devsinc Lahore - Hybrid',
     role: 'Junior Software Engineer',
-    duration: 'June 2021 – June 2022',
+    duration: 'July 2022 – June 2023',
+  },
+  {
+    title: 'Systems Limited Lahore - Onsite',
+    role: 'Intern',
+    duration: 'Sep 2021 – Nov 2021',
   }
 ];
 
