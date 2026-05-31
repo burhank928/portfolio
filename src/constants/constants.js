@@ -8,14 +8,14 @@ export const ProjectsData = [
       'DigitalOcean', 'Hetzner', 'Coolify', 'Sidekiq', 'GraphQL', 'Azure'
     ],
     visit: 'https://apps.shopify.com/product-customizer',
-    id: 0,
+    id: 2,
   },
   {
     title: 'OMF (Fintech)',
     description: 'OneMain Financial provides personal loans, specializing in debt consolidation and financial solutions for unexpected expenses, serving customers with less-than-perfect credit.',
     tags: ['JavaScript (ES6)', 'TypeScript', 'Ruby', 'Rails', 'Okta', 'Jenkins', 'Angular', 'Node.js', 'NestJS', 'Atlassian'],
     visit: 'https://onemainfinancial.com',
-    id: 1,
+    id: 2,
   },
   {
     title: 'Powur (SaaS)',
@@ -26,14 +26,14 @@ export const ProjectsData = [
       'MongoDB', 'Redis', 'Sidekiq', 'Bull', 'CI/CD', 'Monday'
     ],
     visit: 'https://powur.com',
-    id: 2,
+    id: 3,
   },
   {
     title: 'Biomark (HealthCare)',
     description: 'BioMark is a platform that helps patients, doctors, and labs stay connected and updated with secure data transmission between them.',
     tags: ['JavaScript (ES6)', 'TypeScript', 'Ruby', 'React Native', 'Node.js', 'ROR', 'MySql', 'MongoDB', 'Redis', 'ClickUp'],
     visit: 'https://biomarking.com',
-    id: 3,
+    id: 4,
   },
 ];
 
@@ -41,7 +41,7 @@ export const AccomplishmentsData = [
   {
     title: 'Devsinc - Europe & UK London – Remote',
     role: 'Senior Software Engineer',
-    duration: 'Mar 2025 – Present',
+    duration: 'Mar 2025 – Jan 2026',
   },
   {
     title: 'Saas LTV Growth, Wilmington – Remote',

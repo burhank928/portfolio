@@ -11,7 +11,7 @@ const Hero = (props) => {
             Burhan Ahmad Khan
           </SectionTitle>
           <SectionText>
-            Software Developer with 4+ years of experience in fintech, healthcare, and SaaS. Proficient in JavaScript, React.js, NextJs, Node.js, Express, NestJS, and Ruby on Rails. Delivered measurable improvements, including a 30% reduction in unauthorized access with MFA integration, 40% UI performance boost via framework transition, and 15% growth in app adoption through Shopify certification. Skilled in building scalable, secure solutions and enhancing user experience.
+            Senior Full Stack Engineer with 4+ years building web products across SaaS, fintech, healthcare, and e-commerce. I work mostly with React, TypeScript, Node.js, NestJS, and Ruby on Rails. Lately I&apos;ve been building AI-powered features, things like streaming chat interfaces and LLM-based content generation.
           </SectionText>
           <StyledButtonLink
             href={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/files/resume.pdf`}

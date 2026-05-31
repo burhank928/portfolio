@@ -13,6 +13,7 @@ const Acomplishments = () => (
           <BoxTitle>{card.title}</BoxTitle>
           <BoxText>{card.role}</BoxText>
           <BoxText>{card.duration}</BoxText>
+          {card.description && <BoxText>{card.description}</BoxText>}
         </Box>
       ))}
     </Boxes>

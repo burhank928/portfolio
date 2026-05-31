@@ -34,7 +34,7 @@ export default class MyDocument extends Document {
           <link rel="icon" href={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/favicon.ico`} />
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
           <meta name="title" content="Burhan Khan - Software Engineer" />
-          <meta name="description" content="Software Developer with 3+ years of experience in fintech, healthcare, and SaaS. Proficient in JavaScript, React.js, Node.js, React Native, Flutter, and Ruby on Rails. Delivered measurable improvements, including a 30% reduction in unauthorized access with MFA integration, 40% UI performance boost via framework transition, and 15% growth in app adoption through Shopify certification. Skilled in building scalable, secure solutions and enhancing user experience." />
+          <meta name="description" content="Senior Full Stack Engineer with 4+ years building web products across SaaS, fintech, healthcare, and e-commerce. Strong in React, TypeScript, Node.js, NestJS, and Ruby on Rails with experience building AI-powered features." />
         </Head>
         <body>
           <Main />
