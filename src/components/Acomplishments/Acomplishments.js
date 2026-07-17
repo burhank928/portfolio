@@ -1,6 +1,9 @@
 import React from 'react';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxTitle, BoxText } from './AcomplishmentsStyles';
+import {
+  Box, Boxes, BoxTitle, CompanyHeader, CompanyMeta, RoleBlock,
+  RoleHeader, RoleTitle, RoleDuration, BulletList, BulletItem,
+} from './AcomplishmentsStyles';
 import { AccomplishmentsData } from '../../constants/constants';
 
 const Acomplishments = () => (
@@ -8,12 +11,28 @@ const Acomplishments = () => (
     <SectionDivider divider colorAlt />
     <SectionTitle>Work Experience</SectionTitle>
     <Boxes>
-      {AccomplishmentsData.map((card, index) => (
+      {AccomplishmentsData.map((company, index) => (
         <Box key={index}>
-          <BoxTitle>{card.title}</BoxTitle>
-          <BoxText>{card.role}</BoxText>
-          <BoxText>{card.duration}</BoxText>
-          {card.description && <BoxText>{card.description}</BoxText>}
+          <CompanyHeader>
+            <BoxTitle>{company.company}</BoxTitle>
+            <RoleDuration>{company.duration}</RoleDuration>
+          </CompanyHeader>
+          <CompanyMeta>{company.location} · {company.type}</CompanyMeta>
+          {company.roles.map((role, roleIndex) => (
+            <RoleBlock key={roleIndex}>
+              <RoleHeader>
+                <RoleTitle>{role.title}</RoleTitle>
+                <RoleDuration>{role.duration}</RoleDuration>
+              </RoleHeader>
+              {role.bullets.length > 0 && (
+                <BulletList>
+                  {role.bullets.map((bullet, bulletIndex) => (
+                    <BulletItem key={bulletIndex}>{bullet}</BulletItem>
+                  ))}
+                </BulletList>
+              )}
+            </RoleBlock>
+          ))}
         </Box>
       ))}
     </Boxes>

@@ -11,7 +11,7 @@ const Hero = (props) => {
             Burhan Ahmad Khan
           </SectionTitle>
           <SectionText>
-            Senior Full Stack Engineer with 4+ years building web products across SaaS, fintech, healthcare, and e-commerce. I work mostly with React, TypeScript, Node.js, NestJS, and Ruby on Rails. Lately I&apos;ve been building AI-powered features, things like streaming chat interfaces and LLM-based content generation.
+            Senior Full Stack Engineer with 4+ years delivering production web and mobile applications across fintech, SaaS, healthcare, and clean energy. Proficient in React, Angular, TypeScript, Node.js, NestJS, and Ruby on Rails, with experience in microservices architecture, REST and GraphQL APIs, identity systems using Okta IDX, and LLM integration. Led frontend teams across multiple client engagements in an agile environment, migrated 7 authentication flows for a Fortune 500 fintech client from a Rails monolith to Angular 19 with a NestJS BFF, and shipped AI-native features in production including real-time LLM streaming and async content generation.
           </SectionText>
           <StyledButtonLink
             href={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/files/resume.pdf`}

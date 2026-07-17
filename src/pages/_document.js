@@ -34,7 +34,7 @@ export default class MyDocument extends Document {
           <link rel="icon" href={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/favicon.ico`} />
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
           <meta name="title" content="Burhan Khan - Software Engineer" />
-          <meta name="description" content="Senior Full Stack Engineer with 4+ years building web products across SaaS, fintech, healthcare, and e-commerce. Strong in React, TypeScript, Node.js, NestJS, and Ruby on Rails with experience building AI-powered features." />
+          <meta name="description" content="Senior Full Stack Engineer with 4+ years delivering production web and mobile applications across fintech, SaaS, healthcare, and clean energy. Proficient in React, Angular, TypeScript, Node.js, NestJS, and Ruby on Rails, with experience in microservices architecture, REST and GraphQL APIs, identity systems using Okta IDX, and LLM integration." />
         </Head>
         <body>
           <Main />
