@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text-primary antialiased;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  ::selection {
+    @apply bg-text-primary/20 text-text-primary;
+  }
+}
+
+@layer utilities {
+  .section-px {
+    @apply px-section-x-sm md:px-section-x;
+  }
+
+  .section-py {
+    @apply py-section-y-sm md:py-section-y;
+  }
+}
