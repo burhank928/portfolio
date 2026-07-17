@@ -44,7 +44,7 @@ export default function Projects() {
           className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2"
         >
           {projects.map((project) => (
-            <motion.div key={project.title} variants={cardRevealVariants}>
+            <motion.div key={project.title} variants={cardRevealVariants} className="h-full">
               <motion.a
                 href={project.link}
                 target="_blank"
@@ -52,7 +52,7 @@ export default function Projects() {
                 initial="rest"
                 whileHover="hover"
                 variants={cardHoverVariants}
-                className="relative block overflow-hidden rounded-card border bg-surface p-4"
+                className="relative flex h-full flex-col overflow-hidden rounded-card border bg-surface p-4"
               >
                 <motion.span variants={topBorderVariants} className="absolute left-0 top-0 h-[2px] bg-text-primary" />
 
@@ -61,12 +61,12 @@ export default function Projects() {
                     <h3 className="text-[15px] font-medium text-text-primary">{project.title}</h3>
                     <p className="mt-0.5 font-mono text-[11px] text-text-muted">{project.category}</p>
                   </div>
-                  <span className="shrink-0 rounded-pill border border-border-strong bg-surface-elevated px-2 py-1 font-mono text-[10px] text-text-secondary">
+                  {project.metric && <span className="shrink-0 rounded-pill border border-border-strong bg-surface-elevated px-2 py-1 font-mono text-[10px] text-text-secondary">
                     {project.metric}
-                  </span>
+                  </span>}
                 </div>
 
-                <p className="mt-4 text-body text-text-secondary">{project.description}</p>
+                <p className="mt-4 flex-1 text-body text-text-secondary">{project.description}</p>
 
                 <p className="mt-4 font-mono text-[11px] text-text-muted">{project.linkLabel} ↗</p>
               </motion.a>

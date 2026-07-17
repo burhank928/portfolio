@@ -56,7 +56,7 @@ export type ProjectEntry = {
   title: string;
   category: string;
   description: string;
-  metric: string;
+  metric?: string;
   link: string;
   linkLabel: string;
 };
@@ -66,24 +66,24 @@ export const projects: ProjectEntry[] = [
     title: 'OMF',
     category: 'Fintech · CIAM',
     description:
-      '7 auth flows migrated from Rails monolith to Angular 19 for a Fortune 500 fintech client. NestJS BFF, Ionic mobile apps, and Optimizely traffic management.',
-    metric: '86% fewer auth bugs',
+      'Customer identity and access management platform for a Fortune 500 personal finance company. Built a dedicated Angular 19 app with a NestJS BFF, migrating 7 auth flows from a Rails monolith using Okta IDX API, with iOS and Android apps built in Angular Ionic and traffic managed via Optimizely feature flags.',
+    // metric: '86% fewer auth bugs',
     link: 'https://onemainfinancial.com',
     linkLabel: 'onemainfinancial.com',
   },
   {
     title: 'PC - Product Options',
     category: 'E-Commerce',
-    description: 'Built for Shopify certified app. GraphQL API integration and custom buy button checkout flow.',
-    metric: '+25% conversion',
+    description: 'Shopify app enabling merchants to offer unlimited product customization options including engravings, color swatches, and image uploads. Built on React Remix with a GraphQL Shopify API integration, achieving "Built for Shopify" certification and a 15% boost in app adoption.',
+    // metric: '+25% conversion',
     link: 'https://apps.shopify.com/product-customizer',
     linkLabel: 'apps.shopify.com/product-customizer',
   },
   {
     title: 'Orbit Health',
     category: 'Healthcare',
-    description: 'React Native app with Mapbox real-time rider tracking for patients and hospital admins.',
-    metric: '5s polling interval',
+    description: 'Remote mental health care platform serving hospitals, correctional facilities, and clinics. Built React Native features including real-time rider tracking with Mapbox and 5-second polling, used by both patients and admins to monitor active rides.',
+    // metric: '5s polling interval',
     link: 'https://orbithealth.com',
     linkLabel: 'orbithealth.com',
   },
@@ -91,8 +91,8 @@ export const projects: ProjectEntry[] = [
     title: 'Powur',
     category: 'Clean Energy',
     description:
-      'Full-stack features across React, NestJS microservices, and Rails including end-to-end production orders feature.',
-    metric: 'Solar · Residential',
+      'Residential solar sales and fulfillment platform for solar installers and Powur representatives. Built full-stack features across a React frontend, NestJS microservices, and Rails backend, including an end-to-end production orders feature and Bull-based background job processing.',
+    // metric: 'Solar · Residential',
     link: 'https://powur.com',
     linkLabel: 'powur.com',
   },
@@ -117,7 +117,6 @@ export const skills: SkillRow[] = [
       'Ionic',
       'Vite',
       'Tailwind CSS',
-      'Radix UI',
       'Material-UI',
       'Framer Motion',
       'Redux',
